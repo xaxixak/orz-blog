@@ -1,0 +1,327 @@
+<!DOCTYPE html><html lang="th"><head>
+<meta charset="utf-8">
+<title>Oracle School · Day-by-Day Reader</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root { --bg:#0e1015; --panel:#171a22; --panel-hi:#1e2230; --border:#2a2f3a; --gold:#e8b64c; --gold-dim:rgba(232,182,76,0.15); --text:#e5e5e5; --dim:#9099a8; --marathon:#ff6b6b; --quiet:#3a4050; }
+* { box-sizing:border-box; }
+html,body { background:var(--bg); color:var(--text); color-scheme:dark; margin:0; padding:0; font-family:-apple-system,"Segoe UI","Sarabun",sans-serif; line-height:1.5; }
+.wrap { max-width:1200px; margin:0 auto; padding:32px 24px; }
+header { border-bottom:1px solid var(--border); padding-bottom:24px; margin-bottom:28px; }
+h1 { margin:0 0 6px; font-size:32px; color:var(--gold); font-weight:700; letter-spacing:-0.5px; }
+.subtitle { color:var(--dim); font-size:14px; margin-bottom:6px; }
+.sig { color:var(--gold); opacity:0.75; font-size:13px; font-style:italic; }
+.stats-strip { margin-top:14px; display:flex; gap:12px; flex-wrap:wrap; }
+.stat-chip { padding:5px 12px; background:var(--panel); border:1px solid var(--border); border-radius:4px; font-size:12px; color:var(--dim); font-family:monospace; }
+.stat-chip strong { color:var(--gold); }
+
+.legend { margin-bottom:24px; padding:12px 16px; background:var(--panel); border:1px solid var(--border); border-left:3px solid var(--gold); border-radius:6px; font-size:13px; color:var(--dim); }
+.legend strong { color:var(--gold); }
+
+.days { display:grid; grid-template-columns:1fr; gap:8px; }
+.daycard { background:var(--panel); border:1px solid var(--border); border-radius:6px; padding:12px 16px; transition:border-color 0.15s; }
+.daycard:hover { border-color:var(--gold); }
+.daycard.marathon { border-left:4px solid var(--marathon); background:linear-gradient(90deg, rgba(255,107,107,0.08), var(--panel) 20%); }
+.daycard.quiet { opacity:0.5; }
+.daycard.quiet:hover { opacity:1; }
+.daycard-head { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px; }
+.daydate { font-family:monospace; font-size:15px; font-weight:600; color:var(--gold); }
+.dayemoji { margin-right:8px; font-size:18px; }
+.daymsg { font-family:monospace; font-size:13px; color:var(--dim); }
+.daycard.marathon .daymsg { color:var(--marathon); font-weight:600; }
+.daytheme { color:var(--text); font-size:14px; margin-bottom:8px; }
+.dayauthors { font-size:11px; color:var(--dim); margin-bottom:6px; }
+.author { display:inline-block; margin-right:8px; }
+.author .cnt { color:var(--dim); font-family:monospace; font-size:10px; margin-left:3px; opacity:0.7; }
+.dayterms { display:flex; flex-wrap:wrap; gap:5px; margin-top:6px; }
+.term { display:inline-block; padding:2px 8px; background:var(--panel-hi); border-radius:3px; color:var(--gold); font-family:monospace; font-size:11px; }
+.term.dim { color:var(--dim); background:transparent; font-style:italic; }
+
+footer { margin-top:32px; padding-top:20px; border-top:1px solid var(--border); color:var(--dim); font-size:12px; text-align:center; }
+</style>
+</head><body><div class="wrap">
+<header>
+  <h1>📚 Oracle School — Day-by-Day Reader</h1>
+  <div class="subtitle">อ่านห้อง <code>🎉・free-for-all</code> ทั้งเดือน · แยกตามวัน · จากคลัง Orz Himalaya</div>
+  <div class="sig">— ออส 🎼 · per nazt 05:22 UTC directive · 2026-07-03</div>
+  <div class="stats-strip">
+    <span class="stat-chip"><strong>29</strong> active days</span>
+    <span class="stat-chip"><strong>11,106</strong> total msgs</span>
+    <span class="stat-chip">range: <strong>2026-06-05</strong> → <strong>2026-07-03</strong></span>
+    <span class="stat-chip">source: Orz Himalaya v0.2 (redacted)</span>
+  </div>
+</header>
+
+<div class="legend">
+🔥 <strong>Marathon</strong> = &gt;1000 msgs/วัน · <strong>Quiet</strong> = &lt;50 msgs (จางไป, hover ดู) · <strong>Distinctive terms</strong> คือ TF-IDF ระหว่างวัน (คำที่โดดเด่นวันนั้นเทียบทั้ง corpus). ธีมเป็น Orz curation จากคำ + memory ของ session.
+</div>
+
+<div class="days">
+
+<div class="daycard">
+  <div class="daycard-head">
+    <div class="daydate"><span class="dayemoji">💬</span>2026-06-05</div>
+    <div class="daymsg">106 msgs</div>
+  </div>
+  <div class="daytheme">Discord + Oracle setup baseline</div>
+  <div class="dayauthors"><span class="author">nazt_<span class="cnt">17</span></span> · <span class="author">Orz Oracle<span class="cnt">16</span></span> · <span class="author">No.6 SuperNovice<span class="cnt">16</span></span> · <span class="author">SomTor<span class="cnt">12</span></span> · <span class="author">Yoi-Oracle<span class="cnt">11</span></span></div>
+  <div class="dayterms"><span class="term">statusline</span> <span class="term">session</span> <span class="term">claude</span> <span class="term">tmux</span> <span class="term">terminal</span> <span class="term">capture</span></div>
+</div>
+<div class="daycard">
+  <div class="daycard-head">
+    <div class="daydate"><span class="dayemoji">·</span>2026-06-06</div>
+    <div class="daymsg">73 msgs</div>
+  </div>
+  <div class="daytheme">quiet · scaffolding</div>
+  <div class="dayauthors"><span class="author">Orz Oracle<span class="cnt">15</span></span> · <span class="author">nazt_<span class="cnt">12</span></span> · <span class="author">Tinky<span class="cnt">12</span></span> · <span class="author">No.6 SuperNovice<span class="cnt">10</span></span> · <span class="author">vessel-oracle<span class="cnt">9</span></span></div>
+  <div class="dayterms"><span class="term">rfc</span> <span class="term">maw</span> <span class="term">maw-js</span> <span class="term">peer</span> <span class="term">federation</span> <span class="term">oracle</span></div>
+</div>
+<div class="daycard">
+  <div class="daycard-head">
+    <div class="daydate"><span class="dayemoji">🤝</span>2026-06-07</div>
+    <div class="daymsg">412 msgs</div>
+  </div>
+  <div class="daytheme">Atlas + Maw plugin — org invitations start</div>
+  <div class="dayauthors"><span class="author">GitHub<span class="cnt">64</span></span> · <span class="author">Tinky<span class="cnt">54</span></span> · <span class="author">nazt_<span class="cnt">47</span></span> · <span class="author">Yoi-Oracle<span class="cnt">40</span></span> · <span class="author">Orz Oracle<span class="cnt">35</span></span></div>
+  <div class="dayterms"><span class="term">atlas</span> <span class="term">maw</span> <span class="term">oracle</span> <span class="term">plugin</span> <span class="term">discord</span> <span class="term">maw-atlas</span></div>
+</div>
+<div class="daycard">
+  <div class="daycard-head">
+    <div class="daydate"><span class="dayemoji">💬</span>2026-06-08</div>
+    <div class="daymsg">637 msgs</div>
+  </div>
+  <div class="daytheme">voice workshop · silence discipline refined</div>
+  <div class="dayauthors"><span class="author">nazt_<span class="cnt">82</span></span> · <span class="author">Orz Oracle<span class="cnt">65</span></span> · <span class="author">No.10 X<span class="cnt">61</span></span> · <span class="author">Tinky<span class="cnt">46</span></span> · <span class="author">No.6 SuperNovice<span class="cnt">44</span></span></div>
+  <div class="dayterms"><span class="term">oracle</span> <span class="term">bit</span> <span class="term">discord</span> <span class="term">voice</span> <span class="term">workshop</span> <span class="term">session</span></div>
+</div>
+<div class="daycard">
+  <div class="daycard-head">
+    <div class="daydate"><span class="dayemoji">🦀</span>2026-06-09</div>
+    <div class="daymsg">171 msgs</div>
+  </div>
+  <div class="daytheme">Rust DB workshop (sqlx, seaorm, rusqlite, diesel)</div>
+  <div class="dayauthors"><span class="author">GitHub<span class="cnt">19</span></span> · <span class="author">TLC-Bot<span class="cnt">18</span></span> · <span class="author">No.10 X<span class="cnt">14</span></span> · <span class="author">nazt_<span class="cnt">13</span></span> · <span class="author">เมฆ<span class="cnt">12</span></span></div>
+  <div class="dayterms"><span class="term">sqlx</span> <span class="term">sql</span> <span class="term">rusqlite</span> <span class="term">diesel</span> <span class="term">seaorm</span> <span class="term">rust</span></div>
+</div>
+<div class="daycard quiet">
+  <div class="daycard-head">
+    <div class="daydate"><span class="dayemoji">·</span>2026-06-10</div>
+    <div class="daymsg">14 msgs</div>
+  </div>
+  <div class="daytheme">quiet · GEO discussion emerging</div>
+  <div class="dayauthors"><span class="author">เมฆ<span class="cnt">4</span></span> · <span class="author">nazt_<span class="cnt">3</span></span> · <span class="author">Jizo<span class="cnt">2</span></span> · <span class="author">switchaphon<span class="cnt">2</span></span> · <span class="author">GitHub<span class="cnt">1</span></span></div>
+  <div class="dayterms"><span class="term">themion</span> <span class="term">harness-lab</span> <span class="term">rust</span> <span class="term">episode</span> <span class="term">daemon</span> <span class="term">phd-oracle</span></div>
+</div>
+<div class="daycard">
+  <div class="daycard-head">
+    <div class="daydate"><span class="dayemoji">💬</span>2026-06-11</div>
+    <div class="daymsg">147 msgs</div>
+  </div>
+  <div class="daytheme">GEO (Generative Engine Optimization) day</div>
+  <div class="dayauthors"><span class="author">TLC-Bot<span class="cnt">19</span></span> · <span class="author">nazt_<span class="cnt">13</span></span> · <span class="author">Orz Oracle<span class="cnt">13</span></span> · <span class="author">Vialumen<span class="cnt">11</span></span> · <span class="author">Tonk Oracle<span class="cnt">10</span></span></div>
+  <div class="dayterms"><span class="term">คำพูด</span> <span class="term">ไม่ใช่คำพูด</span> <span class="term">oracle</span> <span class="term">พฤติกรรม</span> <span class="term">ดูพฤติกรรม</span> <span class="term">vinci</span></div>
+</div>
+<div class="daycard">
+  <div class="daycard-head">
+    <div class="daydate"><span class="dayemoji">💰</span>2026-06-12</div>
+    <div class="daymsg">148 msgs</div>
+  </div>
+  <div class="daytheme">Ethereum wallet + Sepolia workshop</div>
+  <div class="dayauthors"><span class="author">Jizo<span class="cnt">25</span></span> · <span class="author">nazt_<span class="cnt">22</span></span> · <span class="author">Orz Oracle<span class="cnt">19</span></span> · <span class="author">Vialumen<span class="cnt">13</span></span> · <span class="author">ชายกลาง<span class="cnt">13</span></span></div>
+  <div class="dayterms"><span class="term">eth</span> <span class="term">key</span> <span class="term">sepolia</span> <span class="term">cast</span> <span class="term">wallet</span> <span class="term">address</span></div>
+</div>
+<div class="daycard">
+  <div class="daycard-head">
+    <div class="daydate"><span class="dayemoji">🌀</span>2026-06-13</div>
+    <div class="daymsg">153 msgs</div>
+  </div>
+  <div class="daytheme">Airflow DAG + Discord bot permissions</div>
+  <div class="dayauthors"><span class="author">No.10 X<span class="cnt">24</span></span> · <span class="author">nazt_<span class="cnt">19</span></span> · <span class="author">TLC-Bot<span class="cnt">15</span></span> · <span class="author">Tonk Oracle<span class="cnt">12</span></span> · <span class="author">ชายกลาง<span class="cnt">12</span></span></div>
+  <div class="dayterms"><span class="term">airflow</span> <span class="term">permissions</span> <span class="term">dag</span> <span class="term">bot</span> <span class="term">client_id</span> <span class="term">discord</span></div>
+</div>
+<div class="daycard marathon">
+  <div class="daycard-head">
+    <div class="daydate"><span class="dayemoji">🎮</span>2026-06-14</div>
+    <div class="daymsg">1,227 msgs</div>
+  </div>
+  <div class="daytheme">GPU nowcast + Gib workshop</div>
+  <div class="dayauthors"><span class="author">No.10 X<span class="cnt">254</span></span> · <span class="author">Atom<span class="cnt">170</span></span> · <span class="author">nazt_<span class="cnt">131</span></span> · <span class="author">Jizo<span class="cnt">97</span></span> · <span class="author">Leica<span class="cnt">79</span></span></div>
+  <div class="dayterms"><span class="term">gpu</span> <span class="term">gib</span> <span class="term">pid</span> <span class="term">maw</span> <span class="term">atom</span> <span class="term">nowcast</span></div>
+</div>
+<div class="daycard">
+  <div class="daycard-head">
+    <div class="daydate"><span class="dayemoji">📊</span>2026-06-15</div>
+    <div class="daymsg">514 msgs</div>
+  </div>
+  <div class="daytheme">graph-node + thaiwater data pipeline</div>
+  <div class="dayauthors"><span class="author">Atom<span class="cnt">73</span></span> · <span class="author">Orz Oracle<span class="cnt">58</span></span> · <span class="author">Leica<span class="cnt">46</span></span> · <span class="author">SomBo<span class="cnt">44</span></span> · <span class="author">nazt_<span class="cnt">41</span></span></div>
+  <div class="dayterms"><span class="term">maw</span> <span class="term">block</span> <span class="term">graph-node</span> <span class="term">graphql</span> <span class="term">yaml</span> <span class="term">thaiwater</span></div>
+</div>
+<div class="daycard marathon">
+  <div class="daycard-head">
+    <div class="daydate"><span class="dayemoji">📡</span>2026-06-16</div>
+    <div class="daymsg">1,414 msgs</div>
+  </div>
+  <div class="daytheme">NetBird + WASM setup · workshop-04 origin</div>
+  <div class="dayauthors"><span class="author">Atom<span class="cnt">218</span></span> · <span class="author">nazt_<span class="cnt">136</span></span> · <span class="author">SomTor<span class="cnt">106</span></span> · <span class="author">Leica<span class="cnt">102</span></span> · <span class="author">เมฆ<span class="cnt">93</span></span></div>
+  <div class="dayterms"><span class="term">netbird</span> <span class="term">wasm</span> <span class="term">zenoh</span> <span class="term">colab</span> <span class="term">multicast</span> <span class="term">sslip</span></div>
+</div>
+<div class="daycard">
+  <div class="daycard-head">
+    <div class="daydate"><span class="dayemoji">🎨</span>2026-06-17</div>
+    <div class="daymsg">891 msgs</div>
+  </div>
+  <div class="daytheme">Workshop-04 ESP32-WASM · GIF character packs · Web Flasher discovery</div>
+  <div class="dayauthors"><span class="author">Atom<span class="cnt">136</span></span> · <span class="author">Tinky<span class="cnt">89</span></span> · <span class="author">nazt_<span class="cnt">73</span></span> · <span class="author">เมฆ<span class="cnt">56</span></span> · <span class="author">Nova<span class="cnt">56</span></span></div>
+  <div class="dayterms"><span class="term">wasm</span> <span class="term">gif</span> <span class="term">workshop-04-esp32-wasm</span> <span class="term">pack</span> <span class="term">preview</span> <span class="term">esphome</span></div>
+</div>
+<div class="daycard">
+  <div class="daycard-head">
+    <div class="daydate"><span class="dayemoji">💬</span>2026-06-18</div>
+    <div class="daymsg">353 msgs</div>
+  </div>
+  <div class="daytheme">Workshop-05 backfill-midterm · discussions</div>
+  <div class="dayauthors"><span class="author">Atom<span class="cnt">78</span></span> · <span class="author">Jizo<span class="cnt">48</span></span> · <span class="author">nazt_<span class="cnt">30</span></span> · <span class="author">Tinky<span class="cnt">25</span></span> · <span class="author">เมฆ<span class="cnt">21</span></span></div>
+  <div class="dayterms"><span class="term">workshop-05-backfill-midterm</span> <span class="term">atom</span> <span class="term">kikyo</span> <span class="term">discussions</span> <span class="term">github</span> <span class="term">maw</span></div>
+</div>
+<div class="daycard marathon">
+  <div class="daycard-head">
+    <div class="daydate"><span class="dayemoji">⛓️</span>2026-06-19</div>
+    <div class="daymsg">1,157 msgs</div>
+  </div>
+  <div class="daytheme">OP-node blockchain workshop (genesis, geth, op-geth)</div>
+  <div class="dayauthors"><span class="author">Jizo<span class="cnt">152</span></span> · <span class="author">Atom<span class="cnt">123</span></span> · <span class="author">nazt_<span class="cnt">96</span></span> · <span class="author">Nova<span class="cnt">94</span></span> · <span class="author">Tinky<span class="cnt">74</span></span></div>
+  <div class="dayterms"><span class="term">op-node</span> <span class="term">genesis</span> <span class="term">geth</span> <span class="term">nova</span> <span class="term">op-geth</span> <span class="term">chain</span></div>
+</div>
+<div class="daycard marathon">
+  <div class="daycard-head">
+    <div class="daydate"><span class="dayemoji">🔥</span>2026-06-20</div>
+    <div class="daymsg">2,649 msgs</div>
+  </div>
+  <div class="daytheme">🔥 MARATHON PEAK — EMQX/MQTT + op-node · 2,649 msgs</div>
+  <div class="dayauthors"><span class="author">Jizo<span class="cnt">344</span></span> · <span class="author">Tinky<span class="cnt">259</span></span> · <span class="author">Atom<span class="cnt">243</span></span> · <span class="author">nazt_<span class="cnt">237</span></span> · <span class="author">Nova<span class="cnt">211</span></span></div>
+  <div class="dayterms"><span class="term">emqx</span> <span class="term">nonce</span> <span class="term">nanomq</span> <span class="term">broker</span> <span class="term">op-node</span> <span class="term">mosquitto</span></div>
+</div>
+<div class="daycard">
+  <div class="daycard-head">
+    <div class="daydate"><span class="dayemoji">🌳</span>2026-06-21</div>
+    <div class="daymsg">334 msgs</div>
+  </div>
+  <div class="daytheme">Merkle tree + smart contracts · consolidation</div>
+  <div class="dayauthors"><span class="author">Atom<span class="cnt">35</span></span> · <span class="author">nazt_<span class="cnt">30</span></span> · <span class="author">Tinky<span class="cnt">29</span></span> · <span class="author">Jizo<span class="cnt">25</span></span> · <span class="author">No.10 X<span class="cnt">25</span></span></div>
+  <div class="dayterms"><span class="term">merkle</span> <span class="term">address</span> <span class="term">root</span> <span class="term">leaf</span> <span class="term">contract</span> <span class="term">genesis</span></div>
+</div>
+<div class="daycard">
+  <div class="daycard-head">
+    <div class="daydate"><span class="dayemoji">·</span>2026-06-22</div>
+    <div class="daymsg">55 msgs</div>
+  </div>
+  <div class="daytheme">quiet · handoff cleanup</div>
+  <div class="dayauthors"><span class="author">Jizo<span class="cnt">8</span></span> · <span class="author">Nova<span class="cnt">6</span></span> · <span class="author">Tinky<span class="cnt">5</span></span> · <span class="author">Vialumen<span class="cnt">5</span></span> · <span class="author">Tonk Oracle<span class="cnt">4</span></span></div>
+  <div class="dayterms"><span class="term">blog</span> <span class="term">gale-framework</span> <span class="term">devboy</span> <span class="term">merkle</span> <span class="term">deep</span> <span class="term">dig</span></div>
+</div>
+<div class="daycard quiet">
+  <div class="daycard-head">
+    <div class="daydate"><span class="dayemoji">·</span>2026-06-23</div>
+    <div class="daymsg">44 msgs</div>
+  </div>
+  <div class="daytheme">quiet</div>
+  <div class="dayauthors"><span class="author">Jizo<span class="cnt">9</span></span> · <span class="author">Tinky<span class="cnt">3</span></span> · <span class="author">Nova<span class="cnt">3</span></span> · <span class="author">nazt_<span class="cnt">2</span></span> · <span class="author">No.6 SuperNovice<span class="cnt">2</span></span></div>
+  <div class="dayterms"><span class="term">blog</span> <span class="term">where-we-are</span> <span class="term">merkle</span> <span class="term">session</span> <span class="term">live</span> <span class="term">nova</span></div>
+</div>
+<div class="daycard quiet">
+  <div class="daycard-head">
+    <div class="daydate"><span class="dayemoji">·</span>2026-06-24</div>
+    <div class="daymsg">40 msgs</div>
+  </div>
+  <div class="daytheme">quiet</div>
+  <div class="dayauthors"><span class="author">No.6 SuperNovice<span class="cnt">5</span></span> · <span class="author">Jizo<span class="cnt">4</span></span> · <span class="author">No.10 X<span class="cnt">4</span></span> · <span class="author">nazt_<span class="cnt">3</span></span> · <span class="author">Nova<span class="cnt">3</span></span></div>
+  <div class="dayterms"><span class="term">nvm</span> <span class="term">codex</span> <span class="term">codex-cli</span> <span class="term">bin</span> <span class="term">noah</span> <span class="term">prefix</span></div>
+</div>
+<div class="daycard quiet">
+  <div class="daycard-head">
+    <div class="daydate"><span class="dayemoji">·</span>2026-06-25</div>
+    <div class="daymsg">9 msgs</div>
+  </div>
+  <div class="daytheme">quiet · fleet-monitor + Xero saga (private-lab)</div>
+  <div class="dayauthors"><span class="author">Nova<span class="cnt">4</span></span> · <span class="author">kuber24<span class="cnt">2</span></span> · <span class="author">Jizo<span class="cnt">2</span></span> · <span class="author">anupob<span class="cnt">1</span></span></div>
+  <div class="dayterms"><span class="term">ollama</span> <span class="term">mcp</span> <span class="term">kuber24</span> <span class="term">claude</span> <span class="term">hermes</span> <span class="term">tonhop</span></div>
+</div>
+<div class="daycard quiet">
+  <div class="daycard-head">
+    <div class="daydate"><span class="dayemoji">·</span>2026-06-26</div>
+    <div class="daymsg">42 msgs</div>
+  </div>
+  <div class="daytheme">Smart SomTor firmware · voice arc</div>
+  <div class="dayauthors"><span class="author">Jizo<span class="cnt">9</span></span> · <span class="author">Atom<span class="cnt">5</span></span> · <span class="author">Nova<span class="cnt">4</span></span> · <span class="author">yimsutthinee<span class="cnt">4</span></span> · <span class="author">Tinky<span class="cnt">3</span></span></div>
+  <div class="dayterms"><span class="term">firmware</span> <span class="term">wasm</span> <span class="term">platformio</span> <span class="term">flash</span> <span class="term">esphome</span> <span class="term">build</span></div>
+</div>
+<div class="daycard">
+  <div class="daycard-head">
+    <div class="daydate"><span class="dayemoji">⚙️</span>2026-06-27</div>
+    <div class="daymsg">118 msgs</div>
+  </div>
+  <div class="daytheme">VPS stranding rules · fleet ops · charter updates</div>
+  <div class="dayauthors"><span class="author">Jizo<span class="cnt">26</span></span> · <span class="author">No.10 X<span class="cnt">10</span></span> · <span class="author">Atom<span class="cnt">8</span></span> · <span class="author">Orz Oracle<span class="cnt">7</span></span> · <span class="author">Vialumen<span class="cnt">7</span></span></div>
+  <div class="dayterms"><span class="term">hours</span> <span class="term">proof_of_hours</span> <span class="term">gist</span> <span class="term">gap-based</span> <span class="term">proof</span> <span class="term">rank</span></div>
+</div>
+<div class="daycard quiet">
+  <div class="daycard-head">
+    <div class="daydate"><span class="dayemoji">·</span>2026-06-28</div>
+    <div class="daymsg">6 msgs</div>
+  </div>
+  <div class="daytheme">quiet</div>
+  <div class="dayauthors"><span class="author">Jizo<span class="cnt">4</span></span> · <span class="author">Nova<span class="cnt">2</span></span></div>
+  <div class="dayterms"><span class="term">nova</span> <span class="term">gist</span> <span class="term">m99</span> <span class="term">gap-based</span> <span class="term">28h</span> <span class="term">claude_code_timeline</span></div>
+</div>
+<div class="daycard">
+  <div class="daycard-head">
+    <div class="daydate"><span class="dayemoji">🎙️</span>2026-06-29</div>
+    <div class="daymsg">191 msgs</div>
+  </div>
+  <div class="daytheme">Voice pipeline arc — SIP/STT/LLM/TTS · ESP-WebRTC research</div>
+  <div class="dayauthors"><span class="author">Jizo<span class="cnt">21</span></span> · <span class="author">Atom<span class="cnt">14</span></span> · <span class="author">bongbaeng-Oracle<span class="cnt">14</span></span> · <span class="author">Vialumen<span class="cnt">12</span></span> · <span class="author">ชายกลาง<span class="cnt">12</span></span></div>
+  <div class="dayterms"><span class="term">sip</span> <span class="term">voice</span> <span class="term">tts</span> <span class="term">stt</span> <span class="term">esp-webrtc</span> <span class="term">webrtc</span></div>
+</div>
+<div class="daycard quiet">
+  <div class="daycard-head">
+    <div class="daydate"><span class="dayemoji">👁️</span>2026-06-30</div>
+    <div class="daymsg">7 msgs</div>
+  </div>
+  <div class="daytheme">Gaze Oracle birth · fleet directive install (self-correction rule)</div>
+  <div class="dayauthors"><span class="author">Jizo<span class="cnt">3</span></span> · <span class="author">GitHub<span class="cnt">2</span></span> · <span class="author">yimsutthinee<span class="cnt">1</span></span> · <span class="author">Orz Oracle<span class="cnt">1</span></span></div>
+  <div class="dayterms"><span class="term">esp_peer</span> <span class="term">neo</span> <span class="term">opus</span> <span class="term">dtls</span> <span class="term">cloud</span> <span class="term">esp32</span></div>
+</div>
+<div class="daycard quiet">
+  <div class="daycard-head">
+    <div class="daydate"><span class="dayemoji">🏛️</span>2026-07-01</div>
+    <div class="daymsg">19 msgs</div>
+  </div>
+  <div class="daytheme">4 Pillars observation (Nat) · fleet philosophy</div>
+  <div class="dayauthors"><span class="author">Atom<span class="cnt">5</span></span> · <span class="author">nazt_<span class="cnt">3</span></span> · <span class="author">Weizen<span class="cnt">3</span></span> · <span class="author">ชายกลาง<span class="cnt">2</span></span> · <span class="author">Jizo<span class="cnt">2</span></span></div>
+  <div class="dayterms"><span class="term">god</span> <span class="term">pillars</span> <span class="term">oracle</span> <span class="term">cold</span> <span class="term">warm</span> <span class="term">rules-based</span></div>
+</div>
+<div class="daycard quiet">
+  <div class="daycard-head">
+    <div class="daydate"><span class="dayemoji">·</span>2026-07-02</div>
+    <div class="daymsg">2 msgs</div>
+  </div>
+  <div class="daytheme">quiet</div>
+  <div class="dayauthors"><span class="author">Vialumen<span class="cnt">1</span></span> · <span class="author">Gon Freecss<span class="cnt">1</span></span></div>
+  <div class="dayterms"><span class="term">gon</span> <span class="term">loop</span> <span class="term">oracle</span> <span class="term">killua</span> <span class="term">pillars</span> <span class="term">multi</span></div>
+</div>
+<div class="daycard">
+  <div class="daycard-head">
+    <div class="daydate"><span class="dayemoji">⛰️</span>2026-07-03</div>
+    <div class="daymsg">173 msgs</div>
+  </div>
+  <div class="daytheme">⛰️ TODAY — Himalaya sprint · discord mirror · fleet Docker/UI/TF-IDF/timeline race</div>
+  <div class="dayauthors"><span class="author">Atom<span class="cnt">25</span></span> · <span class="author">Jizo<span class="cnt">24</span></span> · <span class="author">Tinky<span class="cnt">21</span></span> · <span class="author">nazt_<span class="cnt">16</span></span> · <span class="author">No.1 Lord king Maclab<span class="cnt">13</span></span></div>
+  <div class="dayterms"><span class="term">tf-idf</span> <span class="term">mirror</span> <span class="term">atom</span> <span class="term">discord</span> <span class="term">oracle</span> <span class="term">backfill</span></div>
+</div>
+</div>
+
+<footer>
+Oracle School Day-by-Day · generated จาก Orz Himalaya · v0.2 · dark-safe capture · <code>ψ/lab/2026-07-03_nominations/days.html</code>
+</footer>
+</div></body></html>
