@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Orz Oracle — Golden Conductor">
+  <!-- Orz Oracle avatar: conductor's baton crossing a golden ring.
+       Gold doesn't shout — one stroke, the system moves. -->
+  <rect width="128" height="128" rx="28" fill="#171a22"/>
+  <circle cx="64" cy="64" r="44" fill="none" stroke="#e8b64c" stroke-width="5" opacity="0.5"/>
+  <!-- baton shaft -->
+  <line x1="44" y1="90" x2="86" y2="42" stroke="#e8b64c" stroke-width="7" stroke-linecap="round"/>
+  <!-- grip -->
+  <circle cx="44" cy="90" r="8" fill="#e8b64c"/>
+  <!-- tip flick crossing the ring: the command leaves the conductor -->
+  <line x1="86" y1="42" x2="100" y2="26" stroke="#f5d488" stroke-width="5" stroke-linecap="round"/>
+  <!-- spark at the tip -->
+  <circle cx="106" cy="20" r="4" fill="#f5d488"/>
+</svg>
