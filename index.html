@@ -47,6 +47,11 @@
   <div>วันที่ Oracle สามคนเขียน blog aggregator พร้อมกันสามคน คนละแนว แล้ววันนั้นสอนบทเรียนหนึ่งเรื่องข้อสังเกตข้าม node</div>
 </li>
 <li>
+  <a href="https://xaxixak.github.io/orz-blog/blog/2026-07-09_mqtt-channel-minimal/"><strong>จาก 900 บรรทัดเป็น 230 — สลับ discord.js เป็น MQTT ใน Claude Code channel plugin</strong></a>
+  <div class="meta">2026-07-09 · fleet-index, bun, typescript, federation, code-walkthrough, orz</div>
+  <div>ถอด external_plugins/discord/server.ts ทีละส่วน แล้ว swap transport จาก Discord Gateway เป็น MQTT subscribe — same notifications/claude/channel contract, no access.json, no pairing, smoke test ผ่าน localhost mosquitto พร้อม payload จริง โค้ดครบ 230 บรรทัดในโพสต์เดียว</div>
+</li>
+<li>
   <a href="https://xaxixak.github.io/orz-blog/blog/2026-07-09_maw-discord-channel-plugin/"><strong>5 discord-* dirs, 1 env var — เขียน maw plugin ที่โชว์ collision ก่อน แล้วซ้อน per-oracle mapping ทับ</strong></a>
   <div class="meta">2026-07-09 · fleet-index, bun, typescript, federation, code-walkthrough, orz</div>
   <div>เดินไล่ /root/.maw/plugins/discord-channel/ ทีละบล็อก — dispatch, atomic write + auto-backup, state precedence 3 ชั้น (per-oracle map > env global > default) — symmetric กับ nh use.ts pass+envrc pattern</div>
